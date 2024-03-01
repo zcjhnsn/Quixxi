@@ -7,21 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C53361D2B8EA36200B335C1 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53361C2B8EA36200B335C1 /* RowView.swift */; };
+		5C5336212B90431400B335C1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5336202B90431400B335C1 /* Game.swift */; };
+		5C5336232B90F3F500B335C1 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5336222B90F3F500B335C1 /* GameView.swift */; };
+		5C5336252B91175000B335C1 /* StrikesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5336242B91175000B335C1 /* StrikesRow.swift */; };
+		5C5336272B91191A00B335C1 /* StrikesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5336262B91191A00B335C1 /* StrikesRowView.swift */; };
+		5C53362A2B91413C00B335C1 /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5336292B91413C00B335C1 /* Pow */; };
 		5CE234132B8D4E9300F6D80E /* QuixxiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */; };
-		5CE234152B8D4E9300F6D80E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234142B8D4E9300F6D80E /* ContentView.swift */; };
-		5CE234172B8D4E9300F6D80E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234162B8D4E9300F6D80E /* Item.swift */; };
 		5CE234192B8D4E9500F6D80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE234182B8D4E9500F6D80E /* Assets.xcassets */; };
 		5CE2341D2B8D4E9500F6D80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE2341C2B8D4E9500F6D80E /* Preview Assets.xcassets */; };
+		5CE234242B8D4F3B00F6D80E /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234232B8D4F3B00F6D80E /* Row.swift */; };
+		5CE234272B8D54D800F6D80E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE234262B8D54D800F6D80E /* ComposableArchitecture */; };
+		5CE234292B8D557D00F6D80E /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234282B8D557D00F6D80E /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C53361C2B8EA36200B335C1 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		5C5336202B90431400B335C1 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5C5336222B90F3F500B335C1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		5C5336242B91175000B335C1 /* StrikesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikesRow.swift; sourceTree = "<group>"; };
+		5C5336262B91191A00B335C1 /* StrikesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikesRowView.swift; sourceTree = "<group>"; };
+		5C53362B2B914A2100B335C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5CE2340F2B8D4E9300F6D80E /* Quixxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quixxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuixxiApp.swift; sourceTree = "<group>"; };
-		5CE234142B8D4E9300F6D80E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5CE234162B8D4E9300F6D80E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5CE234182B8D4E9500F6D80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CE2341A2B8D4E9500F6D80E /* Quixxi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quixxi.entitlements; sourceTree = "<group>"; };
 		5CE2341C2B8D4E9500F6D80E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CE234232B8D4F3B00F6D80E /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		5CE234282B8D557D00F6D80E /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE234272B8D54D800F6D80E /* ComposableArchitecture in Frameworks */,
+				5C53362A2B91413C00B335C1 /* Pow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,9 +69,15 @@
 		5CE234112B8D4E9300F6D80E /* Quixxi */ = {
 			isa = PBXGroup;
 			children = (
+				5C53362B2B914A2100B335C1 /* Info.plist */,
 				5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */,
-				5CE234142B8D4E9300F6D80E /* ContentView.swift */,
-				5CE234162B8D4E9300F6D80E /* Item.swift */,
+				5C5336222B90F3F500B335C1 /* GameView.swift */,
+				5C5336242B91175000B335C1 /* StrikesRow.swift */,
+				5C5336262B91191A00B335C1 /* StrikesRowView.swift */,
+				5C53361C2B8EA36200B335C1 /* RowView.swift */,
+				5C5336202B90431400B335C1 /* Game.swift */,
+				5CE234232B8D4F3B00F6D80E /* Row.swift */,
+				5CE234282B8D557D00F6D80E /* Box.swift */,
 				5CE234182B8D4E9500F6D80E /* Assets.xcassets */,
 				5CE2341A2B8D4E9500F6D80E /* Quixxi.entitlements */,
 				5CE2341B2B8D4E9500F6D80E /* Preview Content */,
@@ -88,6 +109,10 @@
 			dependencies = (
 			);
 			name = Quixxi;
+			packageProductDependencies = (
+				5CE234262B8D54D800F6D80E /* ComposableArchitecture */,
+				5C5336292B91413C00B335C1 /* Pow */,
+			);
 			productName = Quixxi;
 			productReference = 5CE2340F2B8D4E9300F6D80E /* Quixxi.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +141,10 @@
 				Base,
 			);
 			mainGroup = 5CE234062B8D4E9300F6D80E;
+			packageReferences = (
+				5CE234252B8D54D800F6D80E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				5C5336282B91413C00B335C1 /* XCRemoteSwiftPackageReference "Pow" */,
+			);
 			productRefGroup = 5CE234102B8D4E9300F6D80E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,9 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE234152B8D4E9300F6D80E /* ContentView.swift in Sources */,
-				5CE234172B8D4E9300F6D80E /* Item.swift in Sources */,
+				5C5336252B91175000B335C1 /* StrikesRow.swift in Sources */,
+				5C5336212B90431400B335C1 /* Game.swift in Sources */,
+				5C53361D2B8EA36200B335C1 /* RowView.swift in Sources */,
+				5CE234292B8D557D00F6D80E /* Box.swift in Sources */,
+				5C5336272B91191A00B335C1 /* StrikesRowView.swift in Sources */,
+				5CE234242B8D4F3B00F6D80E /* Row.swift in Sources */,
 				5CE234132B8D4E9300F6D80E /* QuixxiApp.swift in Sources */,
+				5C5336232B90F3F500B335C1 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,16 +312,17 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quixxi/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -296,7 +331,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcjhnsn.Quixxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,16 +352,17 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Quixxi/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -334,7 +371,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcjhnsn.Quixxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,6 +401,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C5336282B91413C00B335C1 /* XCRemoteSwiftPackageReference "Pow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmergeTools/Pow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+		5CE234252B8D54D800F6D80E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C5336292B91413C00B335C1 /* Pow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C5336282B91413C00B335C1 /* XCRemoteSwiftPackageReference "Pow" */;
+			productName = Pow;
+		};
+		5CE234262B8D54D800F6D80E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CE234252B8D54D800F6D80E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CE234072B8D4E9300F6D80E /* Project object */;
 }
