@@ -13,11 +13,11 @@
 		5C5336252B91175000B335C1 /* StrikesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5336242B91175000B335C1 /* StrikesRow.swift */; };
 		5C5336272B91191A00B335C1 /* StrikesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5336262B91191A00B335C1 /* StrikesRowView.swift */; };
 		5C53362A2B91413C00B335C1 /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5336292B91413C00B335C1 /* Pow */; };
+		5C8B69332BB4BC1500DCAED3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8B69322BB4BC1500DCAED3 /* ComposableArchitecture */; };
 		5CE234132B8D4E9300F6D80E /* QuixxiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */; };
 		5CE234192B8D4E9500F6D80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE234182B8D4E9500F6D80E /* Assets.xcassets */; };
 		5CE2341D2B8D4E9500F6D80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE2341C2B8D4E9500F6D80E /* Preview Assets.xcassets */; };
 		5CE234242B8D4F3B00F6D80E /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234232B8D4F3B00F6D80E /* Row.swift */; };
-		5CE234272B8D54D800F6D80E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE234262B8D54D800F6D80E /* ComposableArchitecture */; };
 		5CE234292B8D557D00F6D80E /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234282B8D557D00F6D80E /* Box.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE234272B8D54D800F6D80E /* ComposableArchitecture in Frameworks */,
+				5C8B69332BB4BC1500DCAED3 /* ComposableArchitecture in Frameworks */,
 				5C53362A2B91413C00B335C1 /* Pow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,8 +110,8 @@
 			);
 			name = Quixxi;
 			packageProductDependencies = (
-				5CE234262B8D54D800F6D80E /* ComposableArchitecture */,
 				5C5336292B91413C00B335C1 /* Pow */,
+				5C8B69322BB4BC1500DCAED3 /* ComposableArchitecture */,
 			);
 			productName = Quixxi;
 			productReference = 5CE2340F2B8D4E9300F6D80E /* Quixxi.app */;
@@ -142,8 +142,8 @@
 			);
 			mainGroup = 5CE234062B8D4E9300F6D80E;
 			packageReferences = (
-				5CE234252B8D54D800F6D80E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				5C5336282B91413C00B335C1 /* XCRemoteSwiftPackageReference "Pow" */,
+				5C8B69312BB4BC1500DCAED3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 5CE234102B8D4E9300F6D80E /* Products */;
 			projectDirPath = "";
@@ -306,7 +306,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quixxi/Quixxi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Quixxi/Preview Content\"";
 				DEVELOPMENT_TEAM = V95KUS67FZ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -323,7 +323,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -346,7 +346,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quixxi/Quixxi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Quixxi/Preview Content\"";
 				DEVELOPMENT_TEAM = V95KUS67FZ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -363,7 +363,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -411,12 +411,12 @@
 				minimumVersion = 1.0.3;
 			};
 		};
-		5CE234252B8D54D800F6D80E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		5C8B69312BB4BC1500DCAED3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.8.2;
+				minimumVersion = 1.9.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -427,9 +427,9 @@
 			package = 5C5336282B91413C00B335C1 /* XCRemoteSwiftPackageReference "Pow" */;
 			productName = Pow;
 		};
-		5CE234262B8D54D800F6D80E /* ComposableArchitecture */ = {
+		5C8B69322BB4BC1500DCAED3 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5CE234252B8D54D800F6D80E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = 5C8B69312BB4BC1500DCAED3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
