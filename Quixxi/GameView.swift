@@ -20,16 +20,22 @@ struct GameView: View {
             HStack {
                 HStack {
                     redScore
+                        .contentTransition(.numericText())
                     Text("+")
                     yellowScore
+                        .contentTransition(.numericText())
                     Text("+")
                     greenScore
+                        .contentTransition(.numericText())
                     Text("+")
                     blueScore
+                        .contentTransition(.numericText())
                     Text("-")
                     strikeScore
+                        .contentTransition(.numericText())
                     Text("=")
                     totalScore
+                        .contentTransition(.numericText())
                 }
                 
                 Spacer()
