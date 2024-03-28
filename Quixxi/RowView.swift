@@ -114,7 +114,6 @@ struct RowView: View {
                     Text("lock row via another player")
                 })
                 .labelsHidden()
-                .disabled(store.isLockable)
                 .tint(store.dice.color)
             }
         }
