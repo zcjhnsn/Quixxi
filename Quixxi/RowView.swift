@@ -6,6 +6,7 @@
 //
 
 import ComposableArchitecture
+import Pow
 import SwiftUI
 
 struct RowView: View {
@@ -35,7 +36,12 @@ struct RowView: View {
                             .frame(width: 44)
                             .opacity(store.boxes[number].isNormal ? 0.5 : 1)
                             .disabled(store.boxes[number].isDisabled)
-                            
+                            .transition(
+                                .asymmetric(
+                                    insertion: .movingParts.pop(store.dice.color),
+                                    removal: .scale
+                                )
+                            )
                         }
                     }
                     
@@ -51,6 +57,12 @@ struct RowView: View {
                         .frame(width: 44)
                         .disabled(!store.isLockable)
                         .opacity(store.boxes[10].isNormal ? 0.5 : 1)
+                        .transition(
+                            .asymmetric(
+                                insertion: .movingParts.pop(store.isLockable ? store.dice.color : .gray.opacity(0.5)),
+                                removal: .scale
+                            )
+                        )
                     }
                     
                     if !store.boxes[11].isDisabled {
@@ -65,6 +77,12 @@ struct RowView: View {
                         .disabled(!store.isLockable)
                         .frame(width: 44)
                         .opacity(store.boxes[11].isNormal ? 0.5 : 1)
+                        .transition(
+                            .asymmetric(
+                                insertion: .movingParts.pop(store.isLockable ? store.dice.color : .gray.opacity(0.5)),
+                                removal: .scale
+                            )
+                        )
                     }
                     
                     if !store.isUnlocked {
