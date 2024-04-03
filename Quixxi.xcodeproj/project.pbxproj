@@ -14,6 +14,8 @@
 		5C5336272B91191A00B335C1 /* StrikesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5336262B91191A00B335C1 /* StrikesRowView.swift */; };
 		5C53362A2B91413C00B335C1 /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5336292B91413C00B335C1 /* Pow */; };
 		5C8B69332BB4BC1500DCAED3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8B69322BB4BC1500DCAED3 /* ComposableArchitecture */; };
+		5C8B69352BBDD8C200DCAED3 /* UserDefaultsDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8B69342BBDD8C200DCAED3 /* UserDefaultsDependency.swift */; };
+		5C8B69372BBDD94300DCAED3 /* UserDefaults+Specializations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8B69362BBDD94300DCAED3 /* UserDefaults+Specializations.swift */; };
 		5CE234132B8D4E9300F6D80E /* QuixxiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */; };
 		5CE234192B8D4E9500F6D80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE234182B8D4E9500F6D80E /* Assets.xcassets */; };
 		5CE2341D2B8D4E9500F6D80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE2341C2B8D4E9500F6D80E /* Preview Assets.xcassets */; };
@@ -28,6 +30,21 @@
 		5C5336242B91175000B335C1 /* StrikesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikesRow.swift; sourceTree = "<group>"; };
 		5C5336262B91191A00B335C1 /* StrikesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrikesRowView.swift; sourceTree = "<group>"; };
 		5C53362B2B914A2100B335C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5C8B69342BBDD8C200DCAED3 /* UserDefaultsDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDependency.swift; sourceTree = "<group>"; };
+		5C8B69362BBDD94300DCAED3 /* UserDefaults+Specializations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Specializations.swift"; sourceTree = "<group>"; };
+		5C8B69382BBDD9C700DCAED3 /* AnyCancellableTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCancellableTask.swift; sourceTree = "<group>"; };
+		5C8B69392BBDD9C700DCAED3 /* AsyncStream+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncStream+Additions.swift"; sourceTree = "<group>"; };
+		5C8B693A2BBDD9C700DCAED3 /* AsyncThrowingStream+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncThrowingStream+Additions.swift"; sourceTree = "<group>"; };
+		5C8B693B2BBDD9C700DCAED3 /* BroadcastableAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastableAsyncSequence.swift; sourceTree = "<group>"; };
+		5C8B693D2BBDD9C700DCAED3 /* IncrementingDateGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingDateGenerator.swift; sourceTree = "<group>"; };
+		5C8B693E2BBDD9C700DCAED3 /* TickingDateGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickingDateGenerator.swift; sourceTree = "<group>"; };
+		5C8B69402BBDD9C700DCAED3 /* AsyncSharedSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSharedSubject.swift; sourceTree = "<group>"; };
+		5C8B69422BBDD9C700DCAED3 /* RuntimeWarnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeWarnings.swift; sourceTree = "<group>"; };
+		5C8B69442BBDD9C700DCAED3 /* RandomNumberGenerator+Addtions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomNumberGenerator+Addtions.swift"; sourceTree = "<group>"; };
+		5C8B69452BBDD9C700DCAED3 /* SecureRandomNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureRandomNumberGenerator.swift; sourceTree = "<group>"; };
+		5C8B69472BBDD9C700DCAED3 /* WithTimeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithTimeout.swift; sourceTree = "<group>"; };
+		5C8B69492BBDD9C700DCAED3 /* Proxies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxies.swift; sourceTree = "<group>"; };
+		5C8B694A2BBDD9C700DCAED3 /* Proxies+Unimplemented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Proxies+Unimplemented.swift"; sourceTree = "<group>"; };
 		5CE2340F2B8D4E9300F6D80E /* Quixxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quixxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuixxiApp.swift; sourceTree = "<group>"; };
 		5CE234182B8D4E9500F6D80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +67,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C8B693C2BBDD9C700DCAED3 /* ConcurrencySupport */ = {
+			isa = PBXGroup;
+			children = (
+				5C8B69382BBDD9C700DCAED3 /* AnyCancellableTask.swift */,
+				5C8B69392BBDD9C700DCAED3 /* AsyncStream+Additions.swift */,
+				5C8B693A2BBDD9C700DCAED3 /* AsyncThrowingStream+Additions.swift */,
+				5C8B693B2BBDD9C700DCAED3 /* BroadcastableAsyncSequence.swift */,
+			);
+			path = ConcurrencySupport;
+			sourceTree = "<group>";
+		};
+		5C8B693F2BBDD9C700DCAED3 /* DateGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				5C8B693D2BBDD9C700DCAED3 /* IncrementingDateGenerator.swift */,
+				5C8B693E2BBDD9C700DCAED3 /* TickingDateGenerator.swift */,
+			);
+			path = DateGenerator;
+			sourceTree = "<group>";
+		};
+		5C8B69432BBDD9C700DCAED3 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				5C8B69402BBDD9C700DCAED3 /* AsyncSharedSubject.swift */,
+				5C8B69422BBDD9C700DCAED3 /* RuntimeWarnings.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		5C8B69462BBDD9C700DCAED3 /* RandomNumberGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				5C8B69442BBDD9C700DCAED3 /* RandomNumberGenerator+Addtions.swift */,
+				5C8B69452BBDD9C700DCAED3 /* SecureRandomNumberGenerator.swift */,
+			);
+			path = RandomNumberGenerator;
+			sourceTree = "<group>";
+		};
+		5C8B69482BBDD9C700DCAED3 /* TestSupport */ = {
+			isa = PBXGroup;
+			children = (
+				5C8B69472BBDD9C700DCAED3 /* WithTimeout.swift */,
+			);
+			path = TestSupport;
+			sourceTree = "<group>";
+		};
+		5C8B694B2BBDD9C700DCAED3 /* DependenciesAdditionsBasics */ = {
+			isa = PBXGroup;
+			children = (
+				5C8B693C2BBDD9C700DCAED3 /* ConcurrencySupport */,
+				5C8B693F2BBDD9C700DCAED3 /* DateGenerator */,
+				5C8B69432BBDD9C700DCAED3 /* Internal */,
+				5C8B69462BBDD9C700DCAED3 /* RandomNumberGenerator */,
+				5C8B69482BBDD9C700DCAED3 /* TestSupport */,
+				5C8B69492BBDD9C700DCAED3 /* Proxies.swift */,
+				5C8B694A2BBDD9C700DCAED3 /* Proxies+Unimplemented.swift */,
+			);
+			path = DependenciesAdditionsBasics;
+			sourceTree = "<group>";
+		};
 		5CE234062B8D4E9300F6D80E = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +148,9 @@
 			children = (
 				5C53362B2B914A2100B335C1 /* Info.plist */,
 				5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */,
+				5C8B694B2BBDD9C700DCAED3 /* DependenciesAdditionsBasics */,
+				5C8B69342BBDD8C200DCAED3 /* UserDefaultsDependency.swift */,
+				5C8B69362BBDD94300DCAED3 /* UserDefaults+Specializations.swift */,
 				5C5336222B90F3F500B335C1 /* GameView.swift */,
 				5C5336242B91175000B335C1 /* StrikesRow.swift */,
 				5C5336262B91191A00B335C1 /* StrikesRowView.swift */,
@@ -174,9 +254,11 @@
 				5C5336252B91175000B335C1 /* StrikesRow.swift in Sources */,
 				5C5336212B90431400B335C1 /* Game.swift in Sources */,
 				5C53361D2B8EA36200B335C1 /* RowView.swift in Sources */,
+				5C8B69352BBDD8C200DCAED3 /* UserDefaultsDependency.swift in Sources */,
 				5CE234292B8D557D00F6D80E /* Box.swift in Sources */,
 				5C5336272B91191A00B335C1 /* StrikesRowView.swift in Sources */,
 				5CE234242B8D4F3B00F6D80E /* Row.swift in Sources */,
+				5C8B69372BBDD94300DCAED3 /* UserDefaults+Specializations.swift in Sources */,
 				5CE234132B8D4E9300F6D80E /* QuixxiApp.swift in Sources */,
 				5C5336232B90F3F500B335C1 /* GameView.swift in Sources */,
 			);
@@ -306,13 +388,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quixxi/Quixxi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Quixxi/Preview Content\"";
 				DEVELOPMENT_TEAM = V95KUS67FZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quixxi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Qwixxi;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -346,13 +429,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quixxi/Quixxi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Quixxi/Preview Content\"";
 				DEVELOPMENT_TEAM = V95KUS67FZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quixxi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Qwixxi;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

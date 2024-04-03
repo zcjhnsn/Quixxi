@@ -15,6 +15,8 @@ enum Status {
 
 struct Box: Equatable {
     var status: Status = .normal
+    let number: Int
+    let dice: Dice
     
     var isDisabled: Bool {
         status == .disabled

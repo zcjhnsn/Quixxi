@@ -12,14 +12,6 @@ import SwiftUI
 struct RowView: View {
     @Bindable var store: StoreOf<Row>
     
-    private var leftmost: Int {
-        store.order == .ascending ? 0 : 9
-    }
-    
-    private var rightmost: Int {
-        store.order == .ascending ? 12 : 9
-    }
-    
     var body: some View {
         ZStack {
             HStack(spacing: 8) {
@@ -32,13 +24,13 @@ struct RowView: View {
                                     .resizable()
                                     .scaledToFit()
                             }
-                            .foregroundStyle(store.dice.color)
+                            .foregroundStyle(store.boxes[number].dice.color)
                             .frame(width: 44)
                             .opacity(store.boxes[number].isNormal ? 0.5 : 1)
                             .disabled(store.boxes[number].isDisabled)
                             .transition(
                                 .asymmetric(
-                                    insertion: .movingParts.pop(store.dice.color),
+                                    insertion: .movingParts.pop(store.boxes[number].dice.color),
                                     removal: .scale
                                 )
                             )
@@ -53,13 +45,13 @@ struct RowView: View {
                                 .resizable()
                                 .scaledToFit()
                         }
-                        .foregroundStyle(store.isLockable ? store.dice.color : .gray)
+                        .foregroundStyle(store.isLockable ? store.boxes[10].dice.color : .gray)
                         .frame(width: 44)
                         .disabled(!store.isLockable)
                         .opacity(store.boxes[10].isNormal ? 0.5 : 1)
                         .transition(
                             .asymmetric(
-                                insertion: .movingParts.pop(store.isLockable ? store.dice.color : .gray.opacity(0.5)),
+                                insertion: .movingParts.pop(store.isLockable ? store.boxes[10].dice.color : .gray.opacity(0.5)),
                                 removal: .scale
                             )
                         )
@@ -73,13 +65,13 @@ struct RowView: View {
                                 .resizable()
                                 .scaledToFit()
                         }
-                        .foregroundStyle(store.isLockable ? store.dice.color : .gray)
+                        .foregroundStyle(store.isLockable ? store.boxes[11].dice.color : .gray)
                         .disabled(!store.isLockable)
                         .frame(width: 44)
                         .opacity(store.boxes[11].isNormal ? 0.5 : 1)
                         .transition(
                             .asymmetric(
-                                insertion: .movingParts.pop(store.isLockable ? store.dice.color : .gray.opacity(0.5)),
+                                insertion: .movingParts.pop(store.isLockable ? store.boxes[11].dice.color : .gray.opacity(0.5)),
                                 removal: .scale
                             )
                         )
@@ -123,13 +115,9 @@ struct RowView: View {
         let normal = if index == 11 {
             "lock.square"
         } else {
-            "\(displayNumber(for: index)).square"
+            "\(store.boxes[index].number).square"
         }
         return store.boxes[index].isCrossed ? "x.square.fill" : normal
-    }
-    
-    private func displayNumber(for number: Int) -> Int {
-        store.order == .ascending ? number + 2 : 12 - number
     }
 }
 
@@ -140,41 +128,8 @@ struct RowView: View {
                 store: Store(
                     initialState: Row.State(
                         id: 0,
-                        order: .ascending,
-                        dice: .red
-                    ),
-                    reducer: Row.init
-                )
-            )
-            .frame(height: 44)
-            RowView(
-                store: Store(
-                    initialState: Row.State(
-                        id: 1,
-                        order: .ascending,
-                        dice: .yellow
-                    ),
-                    reducer: Row.init
-                )
-            )
-            .frame(height: 44)
-            RowView(
-                store: Store(
-                    initialState: Row.State(
-                        id: 2,
-                        order: .descending,
-                        dice: .green
-                    ),
-                    reducer: Row.init
-                )
-            )
-            .frame(height: 44)
-            RowView(
-                store: Store(
-                    initialState: Row.State(
-                        id: 1,
-                        order: .descending,
-                        dice: .blue
+                        dice: .red,
+                        boxes: (2...13).map { Box(number: $0, dice: .red) }
                     ),
                     reducer: Row.init
                 )
@@ -190,8 +145,8 @@ struct RowView: View {
             store: Store(
                 initialState: Row.State(
                     id: 0,
-                    order: .descending,
-                    dice: .blue
+                    dice: .blue,
+                    boxes: (1...12).reversed().map { Box(number: $0, dice: .blue) }
                 ),
                 reducer: Row.init
             )

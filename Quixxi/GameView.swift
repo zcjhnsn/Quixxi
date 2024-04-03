@@ -8,6 +8,12 @@
 import ComposableArchitecture
 import SwiftUI
 
+enum Mode: String, CaseIterable, Equatable, Hashable {
+    case normal = "Normal"
+    case mixedColors = "Mixed Colors"
+    case mixedNumbers = "Mixed Numbers"
+}
+
 struct GameView: View {
     @Bindable var store: StoreOf<Game>
     
@@ -47,14 +53,29 @@ struct GameView: View {
         }
         .safeAreaPadding(.all)
         .safeAreaInset(edge: .bottom) { 
-            Button { 
-                store.send(.resetTapped, animation: .bouncy(extraBounce: 0.05))
-            } label: { 
-                Text("Reset")
-                    .padding(.horizontal)
-                    .foregroundStyle(.red)
+            HStack {
+                Button { 
+                    store.send(.resetTapped, animation: .bouncy(extraBounce: 0.05))
+                } label: { 
+                    Text("Reset")
+                        .padding(.horizontal)
+                        .foregroundStyle(.red)
+                }
+                .buttonStyle(.bordered)
+                
+                Spacer()
+                
+                Text("Game Mode:")
+                
+                Picker(selection: $store.mode) { 
+                    ForEach(Mode.allCases, id: \.self) { mode in
+                        Text("\(mode.rawValue)")
+                    }
+                } label: { 
+                    Text("Game Mode")
+                }
+
             }
-            .buttonStyle(.bordered)
         }
         .alert($store.scope(state: \.alert, action: \.alert))
     }
@@ -99,7 +120,7 @@ struct GameView: View {
 #Preview {
     GameView(
         store: Store(
-            initialState: Game.State(),
+            initialState: Game.State(rows: .init(uniqueElements: .normal)),
             reducer: Game.init
         )
     )

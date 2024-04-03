@@ -9,11 +9,6 @@ import ComposableArchitecture
 import Foundation
 import SwiftUI
 
-enum Order {
-    case ascending
-    case descending
-}
-
 enum Dice {
     case red, yellow, green, blue
     
@@ -33,9 +28,8 @@ struct Row {
     @ObservableState
     struct State: Equatable, Identifiable {
         let id: Int
-        let order: Order
         let dice: Dice
-        var boxes: [Box] = Array(repeating: Box(), count: 12)
+        var boxes: [Box] 
         var isUnlocked: Bool = true
         
         var isLockable: Bool {

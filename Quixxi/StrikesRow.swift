@@ -13,7 +13,7 @@ struct StrikesRow {
     
     @ObservableState
     struct State: Equatable {
-        var boxes: [Box] = Array(repeating: Box(), count: 4)
+        var boxes: [Box] = Array(repeating: Box(number: 0, dice: .red), count: 4)
         
         var lastCrossed: Int {
             boxes.lastIndex(where: { $0.isCrossed }) ?? -1
@@ -38,7 +38,7 @@ struct StrikesRow {
                 return .none
                 
             case .reset:
-                state.boxes = Array(repeating: Box(), count: 4)
+                state.boxes = Array(repeating: Box(number: 0, dice: .red), count: 4)
                 return .none
             }
         }
