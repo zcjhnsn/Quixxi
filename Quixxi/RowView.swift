@@ -23,6 +23,7 @@ struct RowView: View {
                                 Image(systemName: image(for: number))
                                     .resizable()
                                     .scaledToFit()
+                                    .contentTransition(.symbolEffect(.replace))
                             }
                             .foregroundStyle(store.boxes[number].dice.color)
                             .frame(width: 44)
@@ -44,6 +45,7 @@ struct RowView: View {
                             Image(systemName: image(for: 10))
                                 .resizable()
                                 .scaledToFit()
+                                .contentTransition(.symbolEffect(.replace))
                         }
                         .foregroundStyle(store.isLockable ? store.boxes[10].dice.color : .gray)
                         .frame(width: 44)
@@ -57,6 +59,7 @@ struct RowView: View {
                         )
                     }
                     
+                    // lock button
                     if !store.boxes[11].isDisabled {
                         Button {
                             store.send(.boxTapped(11), animation: .bouncy(extraBounce: 0.05))
@@ -64,6 +67,7 @@ struct RowView: View {
                             Image(systemName: image(for: 11))
                                 .resizable()
                                 .scaledToFit()
+                                .contentTransition(.symbolEffect(.replace))
                         }
                         .foregroundStyle(store.isLockable ? store.boxes[11].dice.color : .gray)
                         .disabled(!store.isLockable)
@@ -83,7 +87,8 @@ struct RowView: View {
                                 .font(.title)
                             
                             Text("Locked by\nanother player")
-                            
+                                .font(.system(size: 16))
+
                             Spacer()
                         }
                         .transition(
@@ -103,7 +108,7 @@ struct RowView: View {
                 Spacer()
                 
                 Toggle(isOn: $store.isUnlocked.sending(\.lockSwitched).animation(.smooth(extraBounce: 0.05)), label: {
-                    Text("lock row via another player")
+                    Text("Lock row via another player")
                 })
                 .labelsHidden()
                 .tint(store.dice.color)

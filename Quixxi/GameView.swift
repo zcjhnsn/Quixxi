@@ -81,25 +81,25 @@ struct GameView: View {
     }
     
     var redScore: Text {
-        Text("\(store.rows[id: 0]?.score ?? 0)")
+        Text("\(store.redScore)")
             .font(.system(.title, design: .rounded))
             .foregroundStyle(.red)
     }
     
     var yellowScore: Text {
-        Text("\(store.rows[id: 1]?.score ?? 0)")
+        Text("\(store.yellowScore)")
             .font(.system(.title, design: .rounded))
             .foregroundStyle(.yellow)
     }
     
     var greenScore: Text {
-        Text("\(store.rows[id: 2]?.score ?? 0)")
+        Text("\(store.greenScore)")
             .font(.system(.title, design: .rounded))
             .foregroundStyle(.green)
     }
     
     var blueScore: Text {
-        Text("\(store.rows[id: 3]?.score ?? 0)")
+        Text("\(store.blueScore)")
             .font(.system(.title, design: .rounded))
             .foregroundStyle(.blue)
     }

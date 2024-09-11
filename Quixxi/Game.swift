@@ -22,9 +22,25 @@ struct Game {
         init(rows: IdentifiedArrayOf<Row.State> = .init(uniqueElements: .normal)) { 
             self.rows = rows
         }
-        
+
+        var redScore: Int {
+            (0...rows.map { $0.redCount }.sum()).sum()
+        }
+
+        var yellowScore: Int {
+            (0...rows.map { $0.yellowCount }.sum()).sum()
+        }
+
+        var greenScore: Int {
+            (0...rows.map { $0.greenCount }.sum()).sum()
+        }
+
+        var blueScore: Int {
+            (0...rows.map { $0.blueCount }.sum()).sum()
+        }
+
         var totalScore: Int {
-            rows.map { $0.score }.reduce(0, +) - strikes.score
+            redScore + yellowScore + greenScore + blueScore - strikes.score
         }
     }
     
@@ -209,3 +225,9 @@ extension Sequence where Self == [Row.State] {
 //        Row.State(id: 3, dice: .red, boxes: (12...1).map { Box(number: $0, dice: .blue) })
 //    ]
 //}
+
+extension Sequence where Element: Numeric {
+    func sum() -> Element {
+        reduce(.zero, +)
+    }
+}

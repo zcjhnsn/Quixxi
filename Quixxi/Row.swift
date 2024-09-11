@@ -39,12 +39,24 @@ struct Row {
         var lastCrossed: Int {
             boxes.lastIndex(where: { $0.isCrossed }) ?? -1
         }
-        
-        var score: Int {
-            (0...boxes.crossedCount).reduce(0, +)
+
+        var blueCount: Int {
+            boxes.lazy.filter({ $0.dice == .blue && $0.isCrossed }).count
+        }
+
+        var greenCount: Int {
+            boxes.lazy.filter({ $0.dice == .green && $0.isCrossed }).count
+        }
+
+        var redCount: Int {
+            boxes.lazy.filter({ $0.dice == .red && $0.isCrossed }).count
+        }
+
+        var yellowCount: Int {
+            boxes.lazy.filter({ $0.dice == .yellow && $0.isCrossed }).count
         }
     }
-    
+
     enum Action {
         case boxTapped(Int)
         case lockSwitched(Bool)
