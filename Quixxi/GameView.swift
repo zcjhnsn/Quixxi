@@ -64,8 +64,17 @@ struct GameView: View {
                 .buttonStyle(.bordered)
                 
                 Spacer()
-                
-                Text("Game Mode:")
+
+                DiceView(
+                    showRed: !(store.rows[id: 0]?.isComplete ?? false),
+                    showYellow: !(store.rows[id: 1]?.isComplete ?? true),
+                    showGreen: !(store.rows[id: 2]?.isComplete ?? true),
+                    showBlue: !(store.rows[id: 3]?.isComplete ?? true)
+                )
+
+                Spacer()
+
+                Text("Mode:")
                 
                 Picker(selection: $store.mode) { 
                     ForEach(Mode.allCases, id: \.self) { mode in

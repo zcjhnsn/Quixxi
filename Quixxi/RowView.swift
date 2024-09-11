@@ -112,6 +112,7 @@ struct RowView: View {
                 })
                 .labelsHidden()
                 .tint(store.dice.color)
+                .disabled(store.isFull)
             }
         }
     }

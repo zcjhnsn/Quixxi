@@ -35,7 +35,15 @@ struct Row {
         var isLockable: Bool {
             boxes.crossedCount >= 5
         }
-        
+
+        var isFull: Bool {
+            lastCrossed == 11
+        }
+
+        var isComplete: Bool {
+            !isUnlocked || isFull
+        }
+
         var lastCrossed: Int {
             boxes.lastIndex(where: { $0.isCrossed }) ?? -1
         }
