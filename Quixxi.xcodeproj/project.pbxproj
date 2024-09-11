@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C1D6CC02C92477E00EF74E7 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D6CBF2C92477700EF74E7 /* DiceView.swift */; };
 		5C53361D2B8EA36200B335C1 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53361C2B8EA36200B335C1 /* RowView.swift */; };
 		5C5336212B90431400B335C1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5336202B90431400B335C1 /* Game.swift */; };
 		5C5336232B90F3F500B335C1 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5336222B90F3F500B335C1 /* GameView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C1D6CBF2C92477700EF74E7 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		5C53361C2B8EA36200B335C1 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		5C5336202B90431400B335C1 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5C5336222B90F3F500B335C1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				5C8B69342BBDD8C200DCAED3 /* UserDefaultsDependency.swift */,
 				5C8B69362BBDD94300DCAED3 /* UserDefaults+Specializations.swift */,
 				5C5336222B90F3F500B335C1 /* GameView.swift */,
+				5C1D6CBF2C92477700EF74E7 /* DiceView.swift */,
 				5C5336242B91175000B335C1 /* StrikesRow.swift */,
 				5C5336262B91191A00B335C1 /* StrikesRowView.swift */,
 				5C53361C2B8EA36200B335C1 /* RowView.swift */,
@@ -256,6 +259,7 @@
 				5C53361D2B8EA36200B335C1 /* RowView.swift in Sources */,
 				5C8B69352BBDD8C200DCAED3 /* UserDefaultsDependency.swift in Sources */,
 				5CE234292B8D557D00F6D80E /* Box.swift in Sources */,
+				5C1D6CC02C92477E00EF74E7 /* DiceView.swift in Sources */,
 				5C5336272B91191A00B335C1 /* StrikesRowView.swift in Sources */,
 				5CE234242B8D4F3B00F6D80E /* Row.swift in Sources */,
 				5C8B69372BBDD94300DCAED3 /* UserDefaults+Specializations.swift in Sources */,
