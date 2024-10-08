@@ -10,7 +10,8 @@ import Pow
 
 struct DiceView: View {
     @State private var isAnimating: Bool = false
-    @State private var white: Int = 1
+    @State private var whiteOne: Int = 1
+    @State private var whiteTwo: Int = 1
     @State private var red: Int = 2
     @State private var yellow: Int = 3
     @State private var green: Int = 4
@@ -25,7 +26,11 @@ struct DiceView: View {
         ZStack {
             VStack {
                 HStack {
-                    Image(systemName: "die.face.\(white)")
+                    Image(systemName: "die.face.\(whiteOne)")
+                        .resizable()
+                        .scaledToFit()
+
+                    Image(systemName: "die.face.\(whiteTwo)")
                         .resizable()
                         .scaledToFit()
 
@@ -58,7 +63,7 @@ struct DiceView: View {
                     }
                 }
                 .font(.title2)
-                .changeEffect(.shake(rate: .fast), value: white)
+                .changeEffect(.shake(rate: .fast), value: whiteOne)
             }
             .frame(height: 44)
         }
@@ -71,7 +76,8 @@ struct DiceView: View {
     }
 
     private func randomize() {
-        white = Int.random(in: 1...6)
+        whiteOne = Int.random(in: 1...6)
+        whiteTwo = Int.random(in: 1...6)
         red = Int.random(in: 1...6)
         yellow = Int.random(in: 1...6)
         green = Int.random(in: 1...6)
