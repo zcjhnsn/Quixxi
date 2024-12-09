@@ -17,7 +17,7 @@
 		5C8B69332BB4BC1500DCAED3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8B69322BB4BC1500DCAED3 /* ComposableArchitecture */; };
 		5C8B69352BBDD8C200DCAED3 /* UserDefaultsDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8B69342BBDD8C200DCAED3 /* UserDefaultsDependency.swift */; };
 		5C8B69372BBDD94300DCAED3 /* UserDefaults+Specializations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8B69362BBDD94300DCAED3 /* UserDefaults+Specializations.swift */; };
-		5CE234132B8D4E9300F6D80E /* QuixxiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */; };
+		5CE234132B8D4E9300F6D80E /* QuixxScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234122B8D4E9300F6D80E /* QuixxScoreApp.swift */; };
 		5CE234192B8D4E9500F6D80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE234182B8D4E9500F6D80E /* Assets.xcassets */; };
 		5CE2341D2B8D4E9500F6D80E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE2341C2B8D4E9500F6D80E /* Preview Assets.xcassets */; };
 		5CE234242B8D4F3B00F6D80E /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE234232B8D4F3B00F6D80E /* Row.swift */; };
@@ -47,8 +47,8 @@
 		5C8B69472BBDD9C700DCAED3 /* WithTimeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithTimeout.swift; sourceTree = "<group>"; };
 		5C8B69492BBDD9C700DCAED3 /* Proxies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxies.swift; sourceTree = "<group>"; };
 		5C8B694A2BBDD9C700DCAED3 /* Proxies+Unimplemented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Proxies+Unimplemented.swift"; sourceTree = "<group>"; };
-		5CE2340F2B8D4E9300F6D80E /* QuixxScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuixxScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuixxiApp.swift; sourceTree = "<group>"; };
+		5CE2340F2B8D4E9300F6D80E /* QwixxScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QwixxScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE234122B8D4E9300F6D80E /* QuixxScoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuixxScoreApp.swift; sourceTree = "<group>"; };
 		5CE234182B8D4E9500F6D80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CE2341A2B8D4E9500F6D80E /* Quixxi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quixxi.entitlements; sourceTree = "<group>"; };
 		5CE2341C2B8D4E9500F6D80E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		5CE234102B8D4E9300F6D80E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5CE2340F2B8D4E9300F6D80E /* QuixxScore.app */,
+				5CE2340F2B8D4E9300F6D80E /* QwixxScore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				5C53362B2B914A2100B335C1 /* Info.plist */,
-				5CE234122B8D4E9300F6D80E /* QuixxiApp.swift */,
+				5CE234122B8D4E9300F6D80E /* QuixxScoreApp.swift */,
 				5C8B694B2BBDD9C700DCAED3 /* DependenciesAdditionsBasics */,
 				5C8B69342BBDD8C200DCAED3 /* UserDefaultsDependency.swift */,
 				5C8B69362BBDD94300DCAED3 /* UserDefaults+Specializations.swift */,
@@ -179,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5CE2340E2B8D4E9300F6D80E /* QuixxScore */ = {
+		5CE2340E2B8D4E9300F6D80E /* QwixxScore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CE234202B8D4E9500F6D80E /* Build configuration list for PBXNativeTarget "QuixxScore" */;
+			buildConfigurationList = 5CE234202B8D4E9500F6D80E /* Build configuration list for PBXNativeTarget "QwixxScore" */;
 			buildPhases = (
 				5CE2340B2B8D4E9300F6D80E /* Sources */,
 				5CE2340C2B8D4E9300F6D80E /* Frameworks */,
@@ -191,13 +191,13 @@
 			);
 			dependencies = (
 			);
-			name = QuixxScore;
+			name = QwixxScore;
 			packageProductDependencies = (
 				5C5336292B91413C00B335C1 /* Pow */,
 				5C8B69322BB4BC1500DCAED3 /* ComposableArchitecture */,
 			);
 			productName = Quixxi;
-			productReference = 5CE2340F2B8D4E9300F6D80E /* QuixxScore.app */;
+			productReference = 5CE2340F2B8D4E9300F6D80E /* QwixxScore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -232,7 +232,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CE2340E2B8D4E9300F6D80E /* QuixxScore */,
+				5CE2340E2B8D4E9300F6D80E /* QwixxScore */,
 			);
 		};
 /* End PBXProject section */
@@ -263,7 +263,7 @@
 				5C5336272B91191A00B335C1 /* StrikesRowView.swift in Sources */,
 				5CE234242B8D4F3B00F6D80E /* Row.swift in Sources */,
 				5C8B69372BBDD94300DCAED3 /* UserDefaults+Specializations.swift in Sources */,
-				5CE234132B8D4E9300F6D80E /* QuixxiApp.swift in Sources */,
+				5CE234132B8D4E9300F6D80E /* QuixxScoreApp.swift in Sources */,
 				5C5336232B90F3F500B335C1 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +394,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quixxi/Quixxi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Quixxi/Preview Content\"";
 				DEVELOPMENT_TEAM = V95KUS67FZ;
@@ -403,6 +403,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quixxi/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = QwixxScore;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -418,7 +419,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zcjhnsn.QuixxScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcjhnsn.Quixxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -436,7 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Quixxi/Quixxi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Quixxi/Preview Content\"";
 				DEVELOPMENT_TEAM = V95KUS67FZ;
@@ -445,6 +446,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Quixxi/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = QwixxScore;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -460,7 +462,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zcjhnsn.QuixxScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zcjhnsn.Quixxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -483,7 +485,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CE234202B8D4E9500F6D80E /* Build configuration list for PBXNativeTarget "QuixxScore" */ = {
+		5CE234202B8D4E9500F6D80E /* Build configuration list for PBXNativeTarget "QwixxScore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5CE234212B8D4E9500F6D80E /* Debug */,

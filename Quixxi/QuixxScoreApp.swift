@@ -9,7 +9,7 @@ import ComposableArchitecture
 import SwiftUI
 
 @main
-struct QuixxiApp: App {
+struct QuixxScoreApp: App {
 
     var body: some Scene {
         WindowGroup {
